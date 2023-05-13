@@ -4,7 +4,7 @@ import axios from "axios";
 
 const Form = (props) => {
   const [darkMode, setDarkMode] = useState(false);
-  const [nextButtonText, setNextButtonText] = useState(props.formButtonText || "Next");
+  const [setNextButtonText] = useState(props.formButtonText || "Next");
   const [formData, setFormData] = useState({});
   const [latestImageURL, setLatestImageURL] = useState("");
 
@@ -14,9 +14,9 @@ const Form = (props) => {
     document.body.classList.toggle("dark-theme");
   };
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  // const handleChange = (e) => {
+  //   setFormData({ ...formData, [e.target.name]: e.target.value });
+  // };
 
   const handleSubmit = (e) => {
   e.preventDefault();
