@@ -5,7 +5,7 @@ import axios from "axios";
 const Form = (props) => {
   const [darkMode, setDarkMode] = useState(false);
   const [setNextButtonText] = useState(props.formButtonText || "Next");
-  const [formData, setFormData] = useState({});
+  const [formData] = useState({});
   const [latestImageURL, setLatestImageURL] = useState("");
 
 
