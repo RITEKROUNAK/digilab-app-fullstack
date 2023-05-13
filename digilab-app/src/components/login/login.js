@@ -18,7 +18,7 @@ const Login = ({setLoginUser}) => {
   }
 
   const login = () => {
-    axios.post("http://localhost:9002/login", user)
+    axios.post("https://ritekrounak-fuzzy-space-meme-4676pjrq994c5jww-9002.preview.app.github.dev/login", user)
     .then(res => {
       alert(res.data.message);
       setLoginUser(res.data.user);

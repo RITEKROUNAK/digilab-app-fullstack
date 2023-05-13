@@ -22,8 +22,8 @@ const Register = () => {
 
   const register = () => {
     const {name, email, password, reEnterPassword} = user;
-    if(name && email && password && (password == reEnterPassword)){
-      axios.post("http://localhost:9002/register", user)
+    if(name && email && password && (password === reEnterPassword)){
+      axios.post("https://ritekrounak-fuzzy-space-meme-4676pjrq994c5jww-9002.preview.app.github.dev/register", user)
       .then(res => alert(res.data.message));
       navigate('/login');
     } else {
